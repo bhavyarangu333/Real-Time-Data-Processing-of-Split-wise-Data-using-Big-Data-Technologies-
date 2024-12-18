@@ -1,0 +1,18 @@
+api:
+  splitwise:
+    url: https://secure.splitwise.com/api/v3.0/
+    consumer-key: yOmq5FsGOjZNt84oSYhEQlPxHvYflqTM16V9UiNq
+    consumer-secret: U8mIzP64tYKA6Z4G8XL9X0XSaUY7oJ9XurOWaJd3
+    initial-access-token: ivxhUHSj700ByMiHhLflSu5kT8XnSel5lAMYjapH
+
+spring:
+  data:
+    cassandra:
+      keyspace-name: ${SPRING_DATA_CASSANDRA_KEYSPACE_NAME}
+      contact-points: ${SPRING_DATA_CASSANDRA_CONTACT_POINTS}
+      port: ${SPRING_DATA_CASSANDRA_PORT}
+  kafka:
+    consumer:
+      group-id: ${SPRING_KAFKA_CONSUMER_GROUP_ID}
+      auto-offset-reset: ${SPRING_KAFKA_CONSUMER_AUTO_OFFSET_RESET}
+    bootstrap-servers: ${SPRING_KAFKA_BOOTSTRAP_SERVERS}
